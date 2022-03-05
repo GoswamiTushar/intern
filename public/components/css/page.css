@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: calc(1vh+1vw);
+}
+
+.fc {
+  display: flex;
+}
+
+.fc-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.fc-50 {
+  position: fixed;
+  top: 50%;
+  bottom: 50%;
+}
+
+.gc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.font-formatted-1 {
+  font-family: "Roboto", sans-serif;
+}
+
+.font-formatted-2 {
+  font-family: "Amatic SC", cursive;
+}
+
+.home {
+  position: relative;
+  height: 80vh;
+  width: 80vw;
+  left: 10vw;
+  top: 4vh;
+  animation: mymove 5s infinite;
+  background-repeat: no-repeat;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  background-position: center;
+  background-size: 300px;
+}
+
+.home::before {
+  content: "";
+  background-image: "../images/students.jpg";
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 15vh;
+}
+
+.heading > h1 {
+  font-size: 4rem;
+}
